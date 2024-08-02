@@ -1,0 +1,247 @@
+.pt-3 {
+  padding-top: 7.5rem !important;
+}
+.float-left {
+  float: left;
+}
+  
+.navbar .navbar-nav .nav-link:hover,
+.active>.nav-link
+{
+    color: #fff !important;
+    background-color:#bf40bf !important;
+    
+}
+
+
+.search-header {
+  padding: 90px;
+}
+.c1,
+.c2,
+.c3,
+.c4 {
+  margin-top: 25px;
+}
+.img-fluid {
+    margin-right:auto;
+    width: auto;
+    height: auto;
+}
+
+.cart12{
+    
+    position:static;
+    right: auto;
+    bottom: auto;
+}
+
+.title-s{
+    text-decoration: none;
+}
+
+#filter-search-icon {
+    cursor: pointer;
+}
+
+.filter-culomn {
+    display: none;
+}
+
+input:checked + span {
+    color: #bf40bf ;
+    
+}
+
+input[type="checkbox"] {
+    accent-color: #bf40bf;
+  }
+  .card-title {
+   height: none;
+   overflow:initial; 
+
+  }
+  .card {
+    padding: 0;
+  }
+
+  time{
+    position: relative;
+    bottom: 37px;
+    right: 459px;
+    color: #fff;
+    background: black;
+    padding: 2px 3px;
+} 
+
+.card-icons .fa-play{
+    position: absolute;
+    top: 37%;
+    right: 47%;
+    color: #2c3131c7 !important;
+    
+
+}
+
+.card .card-body p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body{
+    min-width: 0;
+}
+
+
+
+@media only screen and (min-width:768px) {
+    .img-fluid {
+        margin-right:-12px;
+        width: 260px;
+        height: 197px;
+    }
+    
+    .cart12{
+        
+        position: relative;
+        right: -89px;
+        bottom: -18px;
+    }
+    time{
+        position: relative;
+        bottom: -78px;
+        right: -56px;
+        color: #fff;
+        background: black;
+        padding: 2px 3px;
+    } 
+    
+    .card-icons .fa-play{
+        position: absolute;
+        top: 36%;
+        right: 28%;
+        color: #2c3131c7 !important;
+    
+    }
+}
+
+@media only screen and (min-width:992px) {
+
+    .cart12{
+        
+        position: relative;
+        right: -204px;
+        bottom: -18px;
+    }
+    time{
+        position: relative;
+        bottom: -76px;
+        right: -58px;
+        color: #fff;
+        background: black;
+        padding: 2px 3px;
+    } 
+    
+    .card-icons .fa-play{
+        position: absolute;
+        top: 36%;
+        right: 21%;
+        color: #2c3131c7 !important;
+    
+    }
+}
+
+
+
+@media only screen and (min-width:1400px) and (max-width:1920px) {
+    .img-fluid {
+        margin-right: -12px;
+        width: 222px;
+        height: 166px;
+    }
+    
+    .cart12{
+        position: absolute;
+        left: 195px;
+        bottom: 10px;
+    }
+    time{
+        position: absolute;
+        bottom: 6px;
+        left: 26rem;
+        color: #fff;
+        background: black;
+        padding: 2px 3px;
+    } 
+    
+    .card-icons .fa-play{
+        position: absolute;
+        top: 34%;
+        right: 13%;
+        color: #2c3131c7 !important;
+    
+    }
+ }
+
+ @media only screen and (min-width:1399px)  {
+    .img-fluid {
+        margin-right: -12px;
+        width: 248px;
+        height: 173px;
+    }
+    
+    .cart12{
+        position: absolute;
+        right:266px;
+        bottom: auto;
+    }
+    time{
+        position: relative;
+        bottom: -65px;
+        right: -57px;
+        color: #fff;
+        background: black;
+        padding: 2px 3px;
+    } 
+    
+    .card-icons .fa-play{
+        position: absolute;
+        top: 38%;
+        right: 14%;
+        color: #2c3131c7 !important;
+    
+    }
+ }
+
+
+ @media only screen and (min-width:1200px) and (max-width:1398px) {
+    .img-fluid {
+        margin-right: -12px;
+        width: 222px;
+        height: 166px;
+    }
+    
+    .cart12{
+        position: absolute;
+        right: 251px;
+        bottom: 8px;
+    }
+    time{
+        position: relative;
+        bottom: -61px;
+        right: -56px;
+        color: #fff;
+        background: black;
+        padding: 2px 3px;
+    } 
+    
+    .card-icons .fa-play{
+        position: absolute;
+        top: 35%;
+        right: 14% ;
+        color: #2c3131c7 !important;
+    
+    }
+ }
+
+

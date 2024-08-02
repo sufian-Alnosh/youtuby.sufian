@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/channel.css">
+  <title> منصة تقني | يوتيوبي</title>
+</head>
+<div class="layer"></div>
+<body dir="rtl">
+  
+      
+  
+  <div id="top-menu">
+    
+
+         <!--Navbar-->
+         <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg   fixed-top py-3">
+            <i class="fa-solid fa-bars fa-lg mx-2" id="toggler"></i>
+            <b class="name-brand">
+              
+              <a class="navbar-brand" href="index.html">يوتيوبي
+                <span class="logo-icon"><i class="fas fa-play-circle"></i></span></a>
+            </b>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto">
+                <li class="nav-item ">
+                  <a class="nav-link px-3 ml-1 " href="index.html">الفيديوهات المقترحة</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  ml-lg-3 mx-lg-3 px-3 ml-1 " href="#" tabindex="1">المرفوعة حديثًا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3 ml-1" href="#"> الفيديوهات الرائجة </a>
+                </li>
+    
+    
+              </ul>
+              <div class="d-flex form-inline" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button onclick="location.href='search.html';" class="btn btn-outline-success" type="submit">ابحث</button>
+              </div>
+              
+            </div>
+            <i class="fas fa-search mr-4 search-icon"></i>
+            <a class="nav-link mb-1 mx-3 login" role="button" href="#" data-bs-toggle="modal"
+                data-bs-target="#loginModal">تسجيل دخول</a>
+          </nav>
+          <input type="search" class="form-control search-input " placeholder="ابحث عن ...">
+    
+        </div>
+        <!--End Navbar-->
+    
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal">
+          <div class="modal-dialog modal-dialog-centered"">
+          <div class=" modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">تسجيل دخول</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="email" class="col-form-label">البريد الالكتروني:</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="col-form-label">كلمة المرور:</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#" style="text-decoration: none;">نسيت كلمة المرور</a>
+              <a href="#" class="mx-auto" style="text-decoration: none;">انشاء حساب</a>
+    
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> دخول</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+      <div class="row pt-5 sid">
+        <div id="wrap">
+          <div class="sidebar ">
+            <ul class="list-group list-group-flush ps-0">
+              <a href="index.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-home me-2  purple" ></i> الصفحة الرئيسة
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fab fa-algolia me-2 purple"></i> الفيديوهات المقترحة
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="far fa-plus-square me-2 purple"></i> المرفوعة حديثًا
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-fire-alt me-2 purple"></i> الفيديوهات الرائجة
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-fire-alt me-2 purple"></i> فيديوهاتي
+    
+              </a>
+              <a href="log.html" class="list-group-item list-group-item-action">
+                <i class="fas fa-history me-2 purple"></i> سجل المشاهدة
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="far fa-share-square me-2 purple"></i> الإشتراكات
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-film me-2 purple"></i> الأفلام والعروض
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-gamepad me-2 purple"></i> ألعاب فيديو
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-tshirt me-2 purple"></i> الموضة والجمال
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-graduation-cap me-2 purple"></i> محتوى تعليمي
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-cog me-2 purple"></i> الإعدادات
+              </a>
+              <a href="" class="list-group-item list-group-item-action">
+                <i class="fas fa-question-circle me-2 purple"></i> مساعدة
+    
+              </a>
+              <a href="" class="list-group-item list-group-item-action disabled">
+                Sufian Alnosh &copy; 2024
+    
+              </a>
+             
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <!--End Modal -->
+
+    
+
+  
+  </div>
+
+    <!-- Body Page -->
+
+  <div class="channel-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="banner position-relative">
+          <img src="/img/cover channel.jpg" class="img-fluid " style="    margin-top: 76px;" alt="...">
+          <div class="social-media position-absolute bg-secondary p-1">
+            <a href="#" title="منصة تقني" class="icon" style="text-decoration: none;margin-right: 2px;">
+              <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.ico" class="rounded-circle " alt="tech" width="20">
+              منصة تقني
+            </a>
+            <a href="#" title="منصة تقني" style="text-decoration: none; margin-right: 2px;">
+              <img src="icon/facebook.png" alt="tech" width="20" >
+            </a>
+            <a href="#" title="منصة تقني" style="text-decoration: none; margin-right: 2px;">
+              <img src="icon/instagram.png" alt="tech" width="20">
+            </a>
+            <a href="#" title="منصة تقني" style="text-decoration: none;margin-right: 2px;">
+              <img src="icon/twitter.png" alt="tech" width="20">
+            </a>
+          </div>
+          <div class="follow position-absolute">
+            <button class="btn btn-info"> 2000 اشتراك</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <nav class="navbar navbar-expand navbar-light bg-light mx-auto w-100 ">
+          
+            <ul class="navbar-nav mx-auto  ">
+              <li class="nav-item active me-1">
+                <a class="nav-link active " href="channel.html" style="padding-left: 5px;"> الصفحة الرئيسية </a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link " href="#" tabindex="1" style="padding-left: 5px;">فيديوهاتي</a>
+              </li>
+              
+              <li class="nav-item me-1">
+                <a class="nav-link " href="#" style="padding-left: 5px;"> قوائم التشغيل </a>
+              </li> 
+              <li class="nav-item me-1">
+                <a class="nav-link " href="#" style="padding-left: 5px;"> القنوات </a>
+              </li> 
+              <li class="nav-item me-1">
+                <a class="nav-link " href="#" style="padding-left: 5px;"> مناقشة </a>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link " href="#" style="padding-left: 5px;"> حول </a>
+              </li>
+              
+            </ul>
+           
+            
+          
+        </nav>
+  
+      </div>
+
+      
+      
+      <div class="video-section bg-white p-2">
+        <div class="card mb-3  border-0" >
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <iframe width="530" height="315" class="d-sm-flex w-sm-100 vi" src="https://www.youtube-nocookie.com/embed/36TsPE-9vwM?si=aFGDIXoXIBhNzglG?rel=0;&autoplay=1" title="منصة تقني"  frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                  <h4 class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</h4>
+                </a>
+                  <p class="card-text">
+                    سلسلة تقني مخصصة لطلاب برنامج BTEC الوطني للاجابة عن جميع التساؤولات والاستفسارات التي تتعلق بالبرنامج شارك معنا اي استفسار عن البرنامج لحتى نجاوبك عليه. منصة تقني بوابتك الى عالم BTEC
+
+                  </p>
+    
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <i class="fa-regular fa-clock"></i>
+                    <span>قبل 5 اشهر</span>
+                  </small>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="latest-download">
+        <div class="container">
+          
+       <h4 class="my-5"> اخر الفيديوهات المرفوعة </h4>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              <div class="card-body p-1">
+                <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+              </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                 <span class="d-block">
+                  <i class="fa-solid fa-film"></i>
+                  <span>3 الاف مشاهدة</span>
+                 </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card mb-4 p-1">
+              <a href="watch.html" style="text-decoration: none;">
+                <div class="card-icons">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+                <div class="card-body p-1">
+                  <p class="card-title">تعلم برمجة واجاهات المستخدم</p>
+                </a>
+  
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">
+                  <span class="d-block">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                   </span> 
+                  <i class="fa-regular fa-clock"></i>
+                  <span>قبل 5 اشهر</span>
+                </small>
+              </div>
+              <a href="channel.html" class="channel-img">
+                <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                  class="rounded-circal my-2 mx-2" width="35">
+                <span class="card-text"> منصة تقني </span>
+  
+              </a>
+  
+            </div>
+  
+          </div>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!-- End Body Page -->
+
+
+
+
+
+
+  <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/533cba4c05.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

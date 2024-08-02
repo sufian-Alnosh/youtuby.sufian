@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "cairoFont";
+    src: url(/fonts/Cairo-Regular.ttf);
+}
+body{
+    font-family: "cairoFont",Arial, sans-serif;
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+
+a{
+    color:#000 ;
+    text-decoration: none !important;
+
+} 
+
+
+nav {
+    --bs-bg-opacity: 1;
+    background-color: #fff;
+}
+
+.logo-icon{
+    background-color: #bf40bf;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 15%;
+    padding: 2px;
+    
+}
+.navbar-brand{
+    padding: 5px;
+}
+button{
+    background-color: transparent !important;
+    color: #bf40bf !important;
+    border-color: #bf40bf !important;
+}
+button:hover{
+    color: #fff !important;
+    background-color: #bf40bf !important;
+}
+
+.nav-link.btn-info{
+    background-color:#17a2b8 ;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.active>.nav-link
+{
+    color: #fff !important;
+    background-color:#bf40bf !important;
+    
+}
+.login{
+    color: #bf40bf;
+}
+
+
+
+.modal .modal-header .btn-close:hover{
+    color: #bf40bf !important;
+    background-color: transparent !important;
+}
+input.form-control:focus,
+button:focus{
+    box-shadow: none !important;
+}
+
+.navbar .search-icon {
+    color: #bf40bf;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 10px;
+    left: 132px;
+    display: none;
+}
+.navbar .search-icon:hover{
+    color: #fff;
+    background: #bf40bf;
+}
+
+.search-input {
+    top: 72px;
+    position: fixed;
+    border: none;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #efeeee;
+    display: none;
+    z-index: 1;
+}
+
+.search-input:focus{
+    background-color: #efeeee;
+}
+.container-fluid{
+    padding: 0px;
+}
+.title-home{
+    margin-right: 3rem;
+}
+
+/* .card-text{
+    position: absolute;
+    text-decoration: none !important;
+    bottom: 22px;
+    } */
+
+    .channel-img{
+        text-decoration: none;
+    }   
+
+
+    .card .card-icons{
+        position: relative;
+    }
+
+    time{
+        position: absolute;
+        bottom: 5px;
+        left: 9px;
+        color: #fff;
+        background: black;
+        padding: 2px 3px;
+    } 
+
+    .card-icons .fa-play{
+        position: absolute;
+        top: 37%;
+        right: 43%;
+        color: #2c3131c7 !important;
+        display: none;
+
+    }
+
+    .card:hover .fa-play {
+        display: inline;
+    }
+
+    .card:hover {
+        transform: translateY(-.9%);
+    }
+
+    .card {
+        transition: transform .5s;
+        padding: 0 !;
+    }
+    .card-title {
+        height: 50px;
+        overflow: hidden;
+    }
+
+   #top-menu .fa-bars:hover {
+   
+    cursor: pointer;
+
+   }
+
+   
+.sid {
+    padding-top: 4.5rem !important;
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 4;
+    right: -17rem;
+    transition: all .5s ease-in-out;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.sidebar:hover {
+    overflow-y: scroll;
+}
+
+
+.sidebar .purple {
+    color: #bf40bf;
+}
+
+.sidebar .list-group-item:hover {
+    color: #fff ;
+    background-color: #bf40bf;
+}
+  
+.sidebar .list-group-item:hover .purple {
+    color: #fff ;
+}
+
+.sidebar .list-group-item{
+    width: 17rem;
+    
+}
+
+#wrap.toggled .sidebar{
+    right: 0rem;
+}
+
+.sidebar::-webkit-scrollbar{
+    background: rgb(230, 230, 230);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background: rgb(179, 179, 179);
+    width: 8px;
+}
+
+.layer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+
+
+@media (max-width: 1115px) {
+    .navbar .collapse .form-inline {
+        display: none !important;
+    }
+    .navbar .search-icon {
+        display: inline;
+    }
+    
+}
+
+@media (min-width: 1115px) {
+    .search-input{
+        display: none !important;
+    }
+}
+
+    
+
+
+    

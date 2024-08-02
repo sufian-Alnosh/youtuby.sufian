@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/watch.css">
+  <title>يوتيوبي</title>
+</head>
+
+    <!--Navbar-->
+    <div class="layer"></div>
+<body dir="rtl">
+  <div id="top-menu">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg   fixed-top py-3">
+        <i class="fa-solid fa-bars fa-lg mx-2" id="toggler"></i>
+        <b class="name-brand">
+          
+          <a class="navbar-brand" href="index.html">يوتيوبي
+            <span class="logo-icon"><i class="fas fa-play-circle"></i></span></a>
+        </b>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item ">
+              <a class="nav-link px-3 ml-1 " href="index.html">الفيديوهات المقترحة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  ml-lg-3 mx-lg-3 px-3 ml-1 " href="#" tabindex="1">المرفوعة حديثًا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 ml-1" href="#"> الفيديوهات الرائجة </a>
+            </li>
+
+
+          </ul>
+          <div class="d-flex form-inline" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button onclick="location.href='search.html';" class="btn btn-outline-success" type="submit">ابحث</button>
+          </div>
+          
+        </div>
+        <i class="fas fa-search mr-4 search-icon"></i>
+        <a class="nav-link mb-1 mx-3 login" role="button" href="#" data-bs-toggle="modal"
+            data-bs-target="#loginModal">تسجيل دخول</a>
+      </nav>
+      <input type="search" class="form-control search-input " placeholder="ابحث عن ...">
+
+    </div>
+    <!--End Navbar-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal">
+      <div class="modal-dialog modal-dialog-centered"">
+      <div class=" modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">تسجيل دخول</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">البريد الالكتروني:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="col-form-label">كلمة المرور:</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#" style="text-decoration: none;">نسيت كلمة المرور</a>
+          <a href="#" class="mx-auto" style="text-decoration: none;">انشاء حساب</a>
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> دخول</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row pt-5 sid">
+    <div id="wrap">
+      <div class="sidebar ">
+        <ul class="list-group list-group-flush ps-0">
+          <a href="index.html" class="list-group-item list-group-item-action">
+            <i class="fas fa-home me-2  purple" ></i> الصفحة الرئيسة
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fab fa-algolia me-2 purple"></i> الفيديوهات المقترحة
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="far fa-plus-square me-2 purple"></i> المرفوعة حديثًا
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-fire-alt me-2 purple"></i> الفيديوهات الرائجة
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-fire-alt me-2 purple"></i> فيديوهاتي
+
+          </a>
+          <a href="log.html" class="list-group-item list-group-item-action">
+            <i class="fas fa-history me-2 purple"></i> سجل المشاهدة
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="far fa-share-square me-2 purple"></i> الإشتراكات
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-film me-2 purple"></i> الأفلام والعروض
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-gamepad me-2 purple"></i> ألعاب فيديو
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-tshirt me-2 purple"></i> الموضة والجمال
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-graduation-cap me-2 purple"></i> محتوى تعليمي
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-cog me-2 purple"></i> الإعدادات
+          </a>
+          <a href="" class="list-group-item list-group-item-action">
+            <i class="fas fa-question-circle me-2 purple"></i> مساعدة
+
+          </a>
+          <a href="" class="list-group-item list-group-item-action disabled">
+            Sufian Alnosh &copy; 2024
+
+          </a>
+         
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+        <!-- End Modal -->
+
+  </div>
+  </div>
+
+  <div class="watch-page pt-3">
+    <div class="container-fluid">
+      <div class="card mb-3  border-0" >
+        <div class="row no-gutters px-4">
+          <div class="col-lg-7">
+            <iframe  height="315" class="d-sm-flex w-sm-100" src="https://www.youtube-nocookie.com/embed/36TsPE-9vwM?si=aFGDIXoXIBhNzglG?rel=0;&autoplay=1;&mute=1" title="منصة تقني"  frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" muted referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-body">
+              <small class="text-muted">
+                <i class="fa-solid fa-film"></i>
+                <span>3 الاف مشاهدة</span>
+                <i class="fa-regular fa-clock"></i>
+                <span>قبل 5 اشهر</span>
+                <a href="channel.html" class="channel-img">
+                  <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                    class="rounded-circal my-2 mx-2" width="50">
+                  <span class="card-text"> منصة تقني </span>
+    
+                </a>
+                <a href="#" class="title-s pb-4" style="color: black; text-decoration: none;">
+                  <h4 class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</h4>
+                </a>
+              </small>
+              
+                <p class="card-text">
+                  سلسلة تقني مخصصة لطلاب برنامج BTEC الوطني للاجابة عن جميع التساؤولات والاستفسارات التي تتعلق بالبرنامج شارك معنا
+                  <span id="dots">...</span> <span id="more">اي استفسار عن البرنامج لحتى نجاوبك عليه. منصة تقني بوابتك الى عالم BTEC </span>
+
+                </p>
+
+                <button class="btn mb-4" id="myBtn">عرض المزيد</button>
+  
+                
+            </div>
+            <div class="watch-icons">
+              <i class="fa-regular fa-heart text-white bg-secondary p-1 rounded-circle " style="margin-right: 3px ;" title="احببته"></i>
+              <i class="fa-regular fa-clock text-white bg-secondary p-1 rounded-circle " style="margin-right: 3px ;" title="المشاهدة لاحقاً" ></i>
+              <i class="fa-regular fa-share-from-square text-white bg-secondary p-1 rounded-circle " style="margin-right: 3px ;" title="مشاركة"></i>
+              <i class="fa-regular fa-circle-play text-white bg-secondary p-1 rounded-circle " style="margin-right: 3px ;"  title="إضافة إلى قائمة التشغيل"></i>
+              <span style="margin-right: 15px;">ابلاغ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4 px-4">
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class="comments">
+            <div class="comments-detalls mb-3">
+              <span>التعليقات 4</span>
+              <span class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  الترتيب حسب
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">التاريخ</a></li>
+                  <li><a class="dropdown-item" href="#">الأحدث</a></li>
+                  
+                </ul>
+              </span>
+            </div>
+            <div class="public-comments">
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="اضافة تعليق عام">  </textarea>
+                <button type="submit" class="btn btn-info mt-3">اضافة تعليق</button>
+
+                <div class="card mt-5 mb-3">
+                  <div class="row card-body ">
+                    <div class="d-flex flex-start align-items-center">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="60"
+                        height="60" />
+                      <div>
+                        <h6 class="fw-bold text-primary mb-1">احمد  </h6>
+                        <p class="text-muted small mb-0">
+                          منذ 40 دقيقة
+                        </p>
+                      </div>
+                    </div>
+        
+                    <p class="mt-3 mb-4 pb-2">
+                      مرحبا, شكرا لكم استفدت كثيراً من الدرس
+                    </p>
+        
+                    <div class="small d-flex justify-content-start icone-comment">
+                      <a href="#!" class="d-flex align-items-center me-3 like ">
+                        <i class="far fa-thumbs-up me-2 "></i>
+                        <p class="mb-0">لايك</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3 replay">
+                        <i class="far fa-comment-dots me-2"></i>
+                        <p class="mb-0">تعليق</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3">
+                        <i class="fas fa-share me-2"></i>
+                        <p class="mb-0">مشاركة</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-footer py-3 border-0 ml-4" style="background-color: #f8f9fa;">
+                    <div class="d-flex flex-start w-100">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="40"
+                        height="40" />
+                      <div data-mdb-input-init class="form-outline w-100">
+                        <textarea class="form-control" id="textAreaExample" rows="4"
+                          style="background: #fff;"></textarea>
+                        <label class="form-label" for="textAreaExample">Message</label>
+                      </div>
+                    </div>
+                    <div class="float-end mt-2 pt-1">
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm">Post comment</button>
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-5 mb-3">
+                  <div class="row card-body">
+                    <div class="d-flex flex-start align-items-center">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="60"
+                        height="60" />
+                      <div>
+                        <h6 class="fw-bold text-primary mb-1">احمد  </h6>
+                        <p class="text-muted small mb-0">
+                          منذ 40 دقيقة
+                        </p>
+                      </div>
+                    </div>
+        
+                    <p class="mt-3 mb-4 pb-2">
+                      مرحبا, شكرا لكم استفدت كثيراً من الدرس
+                    </p>
+        
+                    <div class="small d-flex justify-content-start icone-comment">
+                      <a href="#!" class="d-flex align-items-center me-3 like">
+                        <i class="far fa-thumbs-up me-2"></i>
+                        <p class="mb-0">لايك</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3 replay">
+                        <i class="far fa-comment-dots me-2"></i>
+                        <p class="mb-0">تعليق</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3">
+                        <i class="fas fa-share me-2"></i>
+                        <p class="mb-0">مشاركة</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-footer py-3 border-0 ml-4" style="background-color: #f8f9fa;">
+                    <div class="  d-flex flex-start w-100">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="40"
+                        height="40" />
+                      <div data-mdb-input-init class="form-outline w-100">
+                        <textarea class="form-control" id="textAreaExample" rows="4"
+                          style="background: #fff;"></textarea>
+                        <label class="form-label" for="textAreaExample">Message</label>
+                      </div>
+                    </div>
+                    <div class="float-end mt-2 pt-1">
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm">Post comment</button>
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-5 mb-3">
+                  <div class="row card-body">
+                    <div class="d-flex flex-start align-items-center">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="60"
+                        height="60" />
+                      <div>
+                        <h6 class="fw-bold text-primary mb-1">احمد  </h6>
+                        <p class="text-muted small mb-0">
+                          منذ 40 دقيقة
+                        </p>
+                      </div>
+                    </div>
+        
+                    <p class="mt-3 mb-4 pb-2">
+                      مرحبا, شكرا لكم استفدت كثيراً من الدرس
+                    </p>
+        
+                    <div class="small d-flex justify-content-start icone-comment">
+                      <a href="#!" class="d-flex align-items-center me-3 like ">
+                        <i class="far fa-thumbs-up me-2"></i>
+                        <p class="mb-0">لايك</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3 replay">
+                        <i class="far fa-comment-dots me-2"></i>
+                        <p class="mb-0">تعليق</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3">
+                        <i class="fas fa-share me-2"></i>
+                        <p class="mb-0">مشاركة</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-footer py-3 border-0 ml-4" style="background-color: #f8f9fa;">
+                    <div class="d-flex flex-start w-100">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="40"
+                        height="40" />
+                      <div data-mdb-input-init class="form-outline w-100">
+                        <textarea class="form-control" id="textAreaExample" rows="4"
+                          style="background: #fff;"></textarea>
+                        <label class="form-label" for="textAreaExample">Message</label>
+                      </div>
+                    </div>
+                    <div class="float-end mt-2 pt-1">
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm">Post comment</button>
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-5 mb-3">
+                  <div class="row card-body">
+                    <div class="d-flex flex-start align-items-center">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="60"
+                        height="60" />
+                      <div>
+                        <h6 class="fw-bold text-primary mb-1 name-comment">احمد  </h6>
+                        <p class="text-muted small mb-0">
+                          منذ 40 دقيقة
+                        </p>
+                      </div>
+                    </div>
+        
+                    <p class="mt-3 mb-4 pb-2">
+                      مرحبا, شكرا لكم استفدت كثيراً من الدرس
+                    </p>
+        
+                    <div class="small d-flex justify-content-start icone-comment">
+                      <a href="#!" class="d-flex align-items-center me-3 like">
+                        <i class="far fa-thumbs-up me-2"></i>
+                        <p class="mb-0">لايك</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3 replay">
+                        <i class="far fa-comment-dots me-2"></i>
+                        <p class="mb-0">تعليق</p>
+                      </a>
+                      <a href="#!" class="d-flex align-items-center me-3">
+                        <i class="fas fa-share me-2"></i>
+                        <p class="mb-0">مشاركة</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-footer py-3 border-0 ml-4" style="background-color: #f8f9fa;">
+                    <div class="d-flex flex-start w-100">
+                      <img class="rounded-circle shadow-1-strong me-3"
+                        src="img/people.png" alt="avatar" width="40"
+                        height="40" />
+                      <div data-mdb-input-init class="form-outline w-100">
+                        <textarea class="form-control" id="textAreaExample" rows="4"
+                          style="background: #fff;"></textarea>
+                        <label class="form-label" for="textAreaExample">Message</label>
+                      </div>
+                    </div>
+                    <div class="float-end mt-2 pt-1">
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-sm">Post comment</button>
+                      <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-outline-primary btn-sm">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-5 order-1 order-lg-2 px-4">
+          <p>الاقتراحات</p>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters ">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top w-100" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text " style="margin-right: 6px;">  منصة تقني </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text" style="margin-right: 6px;"> منصة تقني </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+              <a href="watch.html">
+                <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                <time datetime="">16:21</time>
+                <i class="fa-solid fa-play fa-2x"></i>
+              </a>
+            </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text" style="margin-right: 6px;"> منصة تقني </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text" style="margin-right: 6px;"> منصة تقني  </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text" style="margin-right: 6px;"> منصة تقني </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="card-img-top" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text" style="margin-right: 6px;"> منصة تقني </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="card p-2 mb-4" >
+            <div class="row no-gutters">
+              <div class="col-sm-5">
+                <div class="card-icons h-100 w-100">
+                  <a href="watch.html">
+                    <img src="img/covettech.jpg" class="w-100 h-100" alt="card image">
+                    <time datetime="">16:21</time>
+                    <i class="fa-solid fa-play fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <div class="card-body">
+                  
+                  <a href="watch.html" class="title-s" style="color: black; text-decoration: none;">
+                    <p class="card-title ">شو الفرق بين التخصص الاكاديمي وتخصص BTEC الوطني ؟</p>
+                  </a>
+                  <small class="text-muted">
+                    <i class="fa-solid fa-film"></i>
+                    <span>3 الاف مشاهدة</span>
+                    <a href="channel.html" class="channel-img d-sm-block">
+                      <img src="img/WhatsApp Image 2024-06-21 at 4.23.54 PM.jpeg" alt="channel image"
+                        class=" my-1 mr-3 Suggestions-img rounded-circle  " width="35">
+                      <span class="card-text" style="margin-right: 6px;">  منصة تقني </span>
+        
+                    </a>
+                  </small>
+      
+                    
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  <script src="./js/index.js"></script>
+  <script src="./js/watch.js"></script>
+  <script src="https://kit.fontawesome.com/533cba4c05.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
